@@ -14,6 +14,8 @@
         </div>
       
         <a class="btn btn-primary" href="{{route('posts.index')}}">Go Back</a>
+        <a class="btn btn-warning" href="{{route('posts.edit', $post->id)}}">Edit</a>
+
 
 
  
