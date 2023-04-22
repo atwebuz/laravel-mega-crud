@@ -16,6 +16,12 @@
         <a class="btn btn-primary" href="{{route('posts.index')}}">Go Back</a>
         <a class="btn btn-warning" href="{{route('posts.edit', $post->id)}}">Edit</a>
 
+        <form action="{{route('posts.destroy', $post->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+
 
 
  
