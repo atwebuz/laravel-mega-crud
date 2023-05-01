@@ -13,6 +13,8 @@
             <small>{{$post->created_at}}</small>
         </div>
 
+  
+
         <div class="btn-groups d-flex align-items-center justify-content-start gap-2">
                <a class="btn btn-primary" href="{{route('posts.index')}}">Go Back</a>
         <a class="btn btn-warning" href="{{route('posts.edit', $post->id)}}">Edit</a>

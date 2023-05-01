@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PDFController;
 use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,4 @@ Route::get('/', function () {
 });
 
 Route::resource('posts', PostsController::class);
-
+Route::get('pdf', [PDFController::class, 'generatePDF'])->name('pdf');
